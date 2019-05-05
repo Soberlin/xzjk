@@ -47,6 +47,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(reponse['resultMsg'],'成功')
         self.assertEqual(reponse['success'],True)
         self.log.info('首页分享接口测试用例成功')
+    def Add(a,b):
+        return a+b
+
 
 if __name__ == '__main__':
     unittest.main()
