@@ -22,7 +22,13 @@ class MysqlConnect(object):
       # def select(self,sql):
 
 
+# 1  建立连接
+com=pymysql.connect(host='127.0.0.1',port=3306,user='root')
 
+# 2  从连接建立游标
+cur=com.cursor()
 
+# 3 查询数据库(读)
+# cur=
 
 
