@@ -52,7 +52,7 @@ def add_case(caseName="case", rule="test_*.py"):
     # 第一步，加载所有的测试用例
     case_path = os.path.join(rootPath, caseName)  # 用例文件夹
     # 如果不存在这个test文件夹,就自动创建一个
-    if not os.path.exists(rootPath): os.mkdir(case_path)
+    # if not os.path.exists(rootPath): os.mkdir(case_path)
     # print("case case path:%s"%case_path)
     # 定义discover方法的参数
     discover = unittest.defaultTestLoader.discover(cur_path, pattern=rule, top_level_dir=None)
