@@ -152,7 +152,7 @@ def send_email(sender, sender_pass, receiver, filename):
 # 运行代码
 if __name__ == "__main__":
     all_case = add_case()  # 1、把所有用例加载进来
-    run_case(all_case)  # 2 生成测试报告的路径
+    # run_case(all_case)  # 2 生成测试报告的路径
     # 邮箱配置
     # sendera = sender;
     # pswa = psw;
