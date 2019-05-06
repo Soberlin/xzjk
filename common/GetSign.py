@@ -6,6 +6,9 @@
 # 1550480146966
 # 获取10位和13位的时间戳,以及时间戳转换为时间
 import time, datetime
+from logs.logger import Log
+
+log=Log();
 
 # 获取10位时间戳
 def getSign10():
@@ -19,9 +22,12 @@ def getSign10():
 def getSign13():
     t2=int(round(time.time())*1000)    #round  四舍五入了
     t2time=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(t2/1000))
-    print(t2)
-    print(t2time)
+    # log.info(t2)
+    # log.info(t2time)
+    # print(t2)
+    # print(t2time)
     return t2
 
+getSign13()
 
 

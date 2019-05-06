@@ -5,7 +5,15 @@
 # @File    : Config.py
 #代码颜色说明
 #蓝色表示有文件修改没有进行提交
-#
+from common.GetSign import *
+
+# 接口
+html='/html'  #h5的接口
+api='api'    #app的接口
+appId='xingzhuang'    #appId
+resultCode='2000 '   #返回码
+userId='7129685'     #userId
+
 #IP+端口 生产环境
 Host_name1='10.0.0.32:9080'            #线上环境商城32
 Host_name2='10.0.0.35:9080'            #线上环境商城35
@@ -15,6 +23,10 @@ Test_name='192.168.20.2:9080'         #测试环境商城
 MoreAdd='https://m.outdoorclub.com.cn'   #线上环境商城域名地址
 MoreTestAdd='http://testm.outdoorclub.com.cn'
 
+
+#访问接口的头部
+Headers={"timestamp":getSign13(),"sign":"BEB49195DEC0A46A7968D24A4EB5B91E","appId":appId}
+
 #邮箱配置
 sender='liuguo@agleroc.com'
 psw='qiq8aC9ddhTLLnNS' #授权码
@@ -23,12 +35,7 @@ port=25
 smtp_server = 'smtp.exmail.qq.com'
 
 
-# 接口
-html='/html'  #h5的接口
-api='api'    #app的接口
-appId='xingzhuang'    #appId
-resultCode='2000 '   #返回码
-userId='7129685'     #userId
+
 
 #H5商城首页所有接口
 index='/index/loadLayout'                 #首页接口
