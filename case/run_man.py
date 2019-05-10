@@ -10,6 +10,7 @@ from email.mime.multipart import MIMEMultipart
 
 from case import *
 import HTMLTestRunner
+import HTMLTestRunnerFix
 import smtpd
 import smtplib
 from email.mime.text import MIMEText, MIMENonMultipart
@@ -77,7 +78,7 @@ def run_case(all_case, reportName="report"):
     # reportPath = r'report_abspath'  # 进行转义
     # print(reportPath)
     fp = open(report_abspath, "wb")
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'V1.0行装商城接口自动化测试用例')
+    runner = HTMLTestRunnerFix.HTMLTestRunner(stream=fp, title=u'V1.0行装商城接口自动化测试用例')
     # 调用add_case函数返回值
     runner.run(all_case)
     fp.close()

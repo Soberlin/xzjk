@@ -9,7 +9,7 @@ from common.GetSign import *
 
 # 接口
 html='/html'  #h5的接口
-api='api'    #app的接口
+api='/api'    #app的接口
 appId='xingzhuang'    #appId
 resultCode='2000 '   #返回码
 userId='7129685'     #userId
@@ -33,18 +33,23 @@ psw='qiq8aC9ddhTLLnNS' #授权码
 receiver=['liuguo@agleroc.com','wuxianyang@agleroc.com','mingzhenlin@agleroc.com','xuhonghui@agleroc.com','huangyan@agleroc.com','zhangxiaoke@agleroc.com','jingjing@agleroc.com']
 port=25
 smtp_server = 'smtp.exmail.qq.com'
-
-
-
-
 #H5商城首页所有接口
-index='/index/loadLayout'                 #首页接口
-getNavBar='getindex/getNavBar'           #首页导航栏
-getNo='/sCart/getNo'                    #获得卡片
-getQRCode='/html/app/getQRCode'        #获取个人中心二维码
-wxConf='/wechat/getWxConf'            #获得微信授权
-share='/share/lockfansurl'           #微信分享锁粉
-notification='api/notification/getUnreadCount'  #获得消息通知
+getNavBar='/index/getNavBar'
+SY_getNarBar=MoreAdd+getNavBar             #首页导航栏
+getNo='/sCart/getNo'
+SY_getNo=MoreAdd+html+getNo             #获得卡片
+notification='/notification/getUnreadCount'  #获得消息通知
+SY_notification=MoreAdd+api+notification    #获取首页红点数
+getQRCode='/app/getQRCode'
+SY_getcode=MoreAdd+html+getQRCode      #获取个人中心二维码
+index='/index/loadLayout'
+SY_layout=MoreAdd+html+index       #首页接口接口资源
+share='/share/lockfansurl'
+SY_share=MoreAdd+share          #微信锁粉
+wxConf='/wechat/getWxConf'
+SY_getwx=MoreAdd+wxConf       #获得微信授权
+
+
 
 #搜索关键词
 search='/goods/selectGoodsByWords'  #搜索关键词

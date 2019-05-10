@@ -6,89 +6,7 @@
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
-<style type="text/css" media="screen">
-body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
-table       { font-size: 100%; }
-pre         { }
-
-/* -- heading ---------------------------------------------------------------------- */
-h1 {
-	font-size: 16pt;
-	color: gray;
-}
-.heading {
-    margin-top: 0ex;
-    margin-bottom: 1ex;
-}
-
-.heading .attribute {
-    margin-top: 1ex;
-    margin-bottom: 0;
-}
-
-.heading .description {
-    margin-top: 4ex;
-    margin-bottom: 6ex;
-}
-
-/* -- css div popup ------------------------------------------------------------------------ */
-a.popup_link {
-}
-
-a.popup_link:hover {
-    color: red;
-}
-
-.popup_window {
-    display: none;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    /*border: solid #627173 1px; */
-    padding: 10px;
-    background-color: #E6E6D6;
-    font-family: "Lucida Console", "Courier New", Courier, monospace;
-    text-align: left;
-    font-size: 8pt;
-    width: 500px;
-}
-
-}
-/* -- report ------------------------------------------------------------------------ */
-#show_detail_line {
-    margin-top: 3ex;
-    margin-bottom: 1ex;
-}
-#result_table {
-    width: 80%;
-    border-collapse: collapse;
-    border: 1px solid #777;
-}
-#header_row {
-    font-weight: bold;
-    color: white;
-    background-color: #777;
-}
-#result_table td {
-    border: 1px solid #777;
-    padding: 2px;
-}
-#total_row  { font-weight: bold; }
-.passClass  { background-color: #6c6; }
-.failClass  { background-color: #c60; }
-.errorClass { background-color: #c00; }
-.passCase   { color: #6c6; }
-.failCase   { color: #c60; font-weight: bold; }
-.errorCase  { color: #c00; font-weight: bold; }
-.hiddenRow  { display: none; }
-.testcase   { margin-left: 2em; }
-
-
-/* -- ending ---------------------------------------------------------------------- */
-#ending {
-}
-
-</style>
+<style type="text/css" media="screen">body{width:1000px;padding:30px 0;margin:0 auto;font-family:"sans-serif",verdana,arial,helvetica,sans-serif;font-size:14px;background-color:#ECF0F5;color:#444;}table a{display:inline;line-height:20px;font-size:14px;clear:both;color:#fff;font-weight:bold;}table a.popup_link{display:inline-block;width:80px;text-align:center;color:#DD4B39;float:right;}table .failCase a.popup_link{color:#FF7701;}.popup_window{display:none;position:relative;margin:30px auto 0 auto;padding:10px;background-color:#ECF0F5;font-family:"Lucida Console","Courier New",Courier,monospace;width:440px;max-height:250px;overflow-y:auto;overflow-y:overlay;color:#000;}.popup_window > div{position:absolute;right:15px;top:5px;font-weight:bold;}.popup_window > div a{color:#DD4B39;}.popup_window pre{white-space:pre-wrap;word-break:break-all;margin:0;font-size:12px;line-height:16px;}#result_table{width:100%%;border-collapse:collapse;background:#fff;color:#008D4C;}#result_table td{width:80px;padding:8px 8px;line-height:20px;text-align:center;border:1px solid #ECF0F5;}#result_table tr td:nth-child(1){width:500px;word-break:break-all;text-align:left;}#header_row td,#total_row td{color:#f3f3f3;background:#2c3e50;font-weight:bold;font-size:18px;line-height:28px;text-align:center!important;}#result_table .testcase{margin-left:2em;font-size:12px;color:#008D4C;}#result_table .failCase .testcase{color:#FF7701;}#result_table .errorCase .testcase{color:#DD4B39;}#result_table .passClass{color:#f3f3f3;background-color:#4CAE4C;}#result_table .failClass{color:#f3f3f3;background-color:#EEA236;}#result_table .errorClass{color:#f3f3f3;background-color:#D43F3A;}.hiddenRow{display:none;}</style>
 
 </head>
 <body>
@@ -140,11 +58,12 @@ function showClassDetail(cid, count) {
     for (var i = 0; i < count; i++) {
         tid = id_list[i];
         if (toHide) {
-            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).style.display = 'none'
             document.getElementById(tid).className = 'hiddenRow';
         }
         else {
             document.getElementById(tid).className = '';
+            document.getElementById(tid).style.display = '';
         }
     }
 }
@@ -171,261 +90,288 @@ function html_escape(s) {
     return s;
 }
 
-/* obsoleted by detail in <div>
-function showOutput(id, name) {
-    var w = window.open("", //url
-                    name,
-                    "resizable,scrollbars,status,width=800,height=450");
-    d = w.document;
-    d.write("<pre>");
-    d.write(html_escape(output_list[id]));
-    d.write("\n");
-    d.write("<a href='javascript:window.close()'>close</a>\n");
-    d.write("</pre>\n");
-    d.close();
-}
-*/
 --></script>
 
-<div class='heading'>
-<h1>V1.0行装商城接口自动化测试用例</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-05-06 19:33:45</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.399928</p>
-<p class='attribute'><strong>Status:</strong> Pass 7</p>
 
-<p class='description'></p>
-</div>
+        <table style="width: 100%;background: #fff;border-top: 3px solid #d2d6de;box-shadow: 0 1px 1px rgba(0,0,0,0.1);margin-top: 30px;">
+            <tr>
+                <td style="padding: 20px 0 20px 20px;height: 180px;">
+                    <h1 style="font-size: 16px;color: #3c8dbc;font-weight: bold;margin: 0 0 15px 0;">V1.0行装商城接口自动化测试用例</h1>
+                    
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Start Time:</strong> 2019-05-09 11:02:53</p>
+    
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Duration:</strong> 0:00:00.431122</p>
+    
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Status:</strong> Pass 8</p>
+    
+                    <p style="margin: 20px 0 0 0;"></p>
+                </td>
+                <td>
+                    <div style="width: 240px;float: right;z-index: 300;position: relative;margin: 20px 20px 15px 0;text-align: right;">
+                        <img src="https://image-charts.com/chart?chs=220x180&chd=t:8,0,0&chdl=Pass:8|Error:0|Fail:0&cht=p3&chco=4CAE4C|EEA236|D43F3A">
+                     <img src="https://image-charts.com/chart?chs=220x180&chd=t:8,0,0&chdl=Pass:8|Error:0|Fail:0&cht=p3&chco=4CAE4C|EEA236|D43F3A">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    
 
-
-
-<p id='show_detail_line'>Show
-<a href='javascript:showCase(0)'>Summary</a>
-<a href='javascript:showCase(1)'>Failed</a>
-<a href='javascript:showCase(2)'>All</a>
-</p>
-<table id='result_table'>
-<colgroup>
-<col align='left' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-</colgroup>
-<tr id='header_row'>
-    <td>Test Group/Test case</td>
-    <td>Count</td>
-    <td>Pass</td>
-    <td>Fail</td>
-    <td>Error</td>
-    <td>View</td>
-</tr>
-
-<tr class='passClass'>
-    <td>test_index.MyTestCase</td>
-    <td>2</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
-</tr>
-
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_index</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
-
-    <div id='div_pt1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
-           [x]</a>
+        <div style="text-align: right;width: 100%;height: 30px;line-height: 30px;margin: 20px 0 10px 0;position: relative;">
+            Show
+            <a href='javascript:showCase(0)' style="font-weight: bold;margin: 0 5px;font-size: 16px;color: #f39c12;">Summary</a>
+            <a href='javascript:showCase(1)' style="font-weight: bold;margin: 0 5px;font-size: 16px;color: #dd4b39;">Failed</a>
+            <a href='javascript:showCase(2)' style="font-weight: bold;margin: 0 5px;font-size: 16px;color: #00a65a;">All</a>
         </div>
-        <pre>
-        
-pt1.1: 
 
-        </pre>
-    </div>
-    <!--css div popup end-->
 
-    </td>
-</tr>
+        <table id='result_table'>
+            <colgroup>
+                <col align='left' />
+                <col align='right' />
+                <col align='right' />
+                <col align='right' />
+                <col align='right' />
+                <col align='right' />
+            </colgroup>
+            <tr id='header_row'>
+                <td>Test Group/Test case</td>
+                <td>Count</td>
+                <td>Pass</td>
+                <td>Fail</td>
+                <td>Error</td>
+                <td>View</td>
+            </tr>
+            
+        <tr class='passClass'>
+            <td>test_index.MyTestCase</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+        </tr>
+    
+        <tr id='pt1.1' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_index</div></td>
+            <td colspan='5' align='center'>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_search</div></td>
-    <td colspan='5' align='center'>
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+                pass</a>
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+            <div id='div_pt1.1' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt1.1: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2: 
+            </td>
+        </tr>
+    
+        <tr id='pt1.2' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_search</div></td>
+            <td colspan='5' align='center'>
 
-        </pre>
-    </div>
-    <!--css div popup end-->
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+                pass</a>
 
-    </td>
-</tr>
+            <div id='div_pt1.2' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt1.2: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-<tr class='passClass'>
-    <td>test_sy.MyTestCase</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
+            </td>
+        </tr>
+    
+        <tr class='passClass'>
+            <td>test_sy.MyTestCase</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
+        </tr>
+    
+        <tr id='pt2.1' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_getNarBar</div></td>
+            <td colspan='5' align='center'>
 
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_sy</div></td>
-    <td colspan='5' align='center'>
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+                pass</a>
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
-        pass</a>
+            <div id='div_pt2.1' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt2.1: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-    <div id='div_pt2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.1: 
+            </td>
+        </tr>
+    
+        <tr id='pt2.2' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_sy</div></td>
+            <td colspan='5' align='center'>
 
-        </pre>
-    </div>
-    <!--css div popup end-->
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+                pass</a>
 
-    </td>
-</tr>
+            <div id='div_pt2.2' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt2.2: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-<tr class='passClass'>
-    <td>test_syfx.MyTestCase</td>
-    <td>4</td>
-    <td>4</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c3',4)">Detail</a></td>
-</tr>
+            </td>
+        </tr>
+    
+        <tr class='passClass'>
+            <td>test_syfx.MyTestCase</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td><a href="javascript:showClassDetail('c3',4)">Detail</a></td>
+        </tr>
+    
+        <tr id='pt3.1' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_1</div></td>
+            <td colspan='5' align='center'>
 
-<tr id='pt3.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_syfx_1</div></td>
-    <td colspan='5' align='center'>
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+                pass</a>
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
-        pass</a>
+            <div id='div_pt3.1' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt3.1: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-    <div id='div_pt3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.1: 
+            </td>
+        </tr>
+    
+        <tr id='pt3.2' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_2</div></td>
+            <td colspan='5' align='center'>
 
-        </pre>
-    </div>
-    <!--css div popup end-->
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
+                pass</a>
 
-    </td>
-</tr>
+            <div id='div_pt3.2' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt3.2: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-<tr id='pt3.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_syfx_2</div></td>
-    <td colspan='5' align='center'>
+            </td>
+        </tr>
+    
+        <tr id='pt3.3' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_3</div></td>
+            <td colspan='5' align='center'>
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
-        pass</a>
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
+                pass</a>
 
-    <div id='div_pt3.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.2: 
+            <div id='div_pt3.3' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt3.3: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-        </pre>
-    </div>
-    <!--css div popup end-->
+            </td>
+        </tr>
+    
+        <tr id='pt3.4' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_4</div></td>
+            <td colspan='5' align='center'>
 
-    </td>
-</tr>
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >
+                pass</a>
 
-<tr id='pt3.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_syfx_3</div></td>
-    <td colspan='5' align='center'>
+            <div id='div_pt3.4' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt3.4: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
-        pass</a>
+            </td>
+        </tr>
+    
+            <tr id='total_row'>
+                <td>Total</td>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
 
-    <div id='div_pt3.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.3: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt3.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_syfx_4</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >
-        pass</a>
-
-    <div id='div_pt3.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.4: 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='total_row'>
-    <td>Total</td>
-    <td>7</td>
-    <td>7</td>
-    <td>0</td>
-    <td>0</td>
-    <td>&nbsp;</td>
-</tr>
-</table>
-
+    
 <div id='ending'>&nbsp;</div>
 
 </body>

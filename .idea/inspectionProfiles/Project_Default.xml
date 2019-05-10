@@ -5,6 +5,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="HTMLTestRunner" />
+          <option value="HTMLTestRunnerFix" />
         </list>
       </option>
     </inspection_tool>

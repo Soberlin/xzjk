@@ -4,31 +4,66 @@
 # @Site    : 
 # @File    : MysqlConnect.py
 import pymysql
-class MysqlConnect(object):
-      #魔术方法，初始化，构造器
-      def __init__(self,host,user,password,database):
-          self.db=pymysql.connect(host=host,user=user,password=password,port=3306,database=database,charset='utf8')
-          self.cursor=self.db.cursor()
-      #将要插入的数据写成元祖传入
-      def exec_data(self,sql,data=None):
-          self.cursor.execute(sql,data)
-          self.db.commit()
-      #sql拼接时使用repr(),将字符串原样输出
-      def exce(self,sql):
-          self.cursor.execute(sql)
-          #提交到数据库执行
-          self.db.commit()
-
-      # def select(self,sql):
 
 
-# 1  建立连接
-com=pymysql.connect(host='127.0.0.1',port=3306,user='root')
+def get_db_conn():
+    conn=pymysql.connect(
+        host='host',
+        user='user',
+        password='password',
+        port=3306,
+        database='database',
+        charset='utf8')
+    return conn
 
-# 2  从连接建立游标
-cur=com.cursor()
 
-# 3 查询数据库(读)
-# cur=
+#封装数据库查询操作
+def query_db(sql):
+    conn=get_db_conn()
+    cur=conn.cursor()
+    cur.execute(sql)
+    result=cur.fetchall()
+    cur.close()
+    conn.close()
+    return result
 
+#封装更改数据库操作
+
+def update_db(sql):
+    conn=get_db_conn()    #获取连接
+    cur=conn.cursor()    #建立游标
+    try:
+        cur.execute(sql)  #执行sql
+        conn.commit()     #提交更改
+    except Exception as e:
+        conn.rollback()    #回滚
+    finally:
+        cur.close()   #关闭游标
+        conn.close()  #关闭连接
+
+# 封装常用数据库操作
+def check_user(name):
+    # 注意sql中''号嵌套的问题
+    sql = "select * from user where name = '{}'".format(name)
+    result = query_db(sql)
+    return True if result else False
+
+
+def add_user(name, password):
+    sql = "insert into user (name, passwd) values ('{}','{}')".format(name, password)
+    update_db(sql)
+
+def del_user(name):
+    sql = "delete from user where name='{}'".format(name)
+    update_db(sql)
+
+
+
+
+
+
+# from db import *
+
+if check_user("张三"):
+    del_user("张三")
 
