@@ -11,9 +11,9 @@ from common import Config
 from logs.logger import Log
 class RunMain:
     log=Log();
-    """含有构造器"""
-    def __init__(self,url,method,data=None):
-        self.t=self.run_main(url,method,data)
+    # """含有构造器"""
+    # def __init__(self,url,method,data=None):
+    #     self.t=self.run_main(url,method,data)
 
     def send_post(self,url,data):
         try:
@@ -22,7 +22,8 @@ class RunMain:
             self.log.info("post请求的响应内容：%s"%result)
             self.log.info("post请求返回的状态码：%s"%r.status_code)
             self.log.info("post接口响应时间：%s"%r.elapsed.total_seconds())
-            return json.dumps(result,indent=2,sort_keys=False,ensure_ascii=False)
+            return result
+            # return json.dumps(result,indent=2,sort_keys=True,ensure_ascii=False)
         except Exception as e:
             self.log.info("post请求错误：%e"%e)
     #利用json，dumps将响应数据进行json格式的编码解析
@@ -35,10 +36,11 @@ class RunMain:
             r=requests.get(url=url,params=data)
             result=r.json()
             self.log.info("get请求的响应内容：%s"%result)
-            self.log.info("get请求返回的状态码：%s"%r)
+            # self.log.info("get请求返回的状态码：%s"%r)
             self.log.info("get请求的url:%s"%url)
             self.log.info("get接口响应时间：%s" % r.elapsed.total_seconds())
-            return  json.dumps(result,indent=2,sort_keys=False,ensure_ascii=False)
+            return result
+            # return  json.dumps(result,indent=2,sort_keys=True,ensure_ascii=False)
         except Exception as e:
             self.log.info("get请求错误：%e"%e)
 

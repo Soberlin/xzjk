@@ -35,7 +35,7 @@ port=25
 smtp_server = 'smtp.exmail.qq.com'
 #H5商城首页所有接口
 getNavBar='/index/getNavBar'
-SY_getNarBar=MoreAdd+getNavBar             #首页导航栏
+SY_getNarBar=MoreAdd+getNavBar             #首页导航栏 tarBar
 getNo='/sCart/getNo'
 SY_getNo=MoreAdd+html+getNo             #获得卡片
 notification='/notification/getUnreadCount'  #获得消息通知
@@ -49,15 +49,27 @@ SY_share=MoreAdd+share          #微信锁粉
 wxConf='/wechat/getWxConf'
 SY_getwx=MoreAdd+wxConf       #获得微信授权
 
-
-
 #搜索关键词
 search='/goods/selectGoodsByWords'  #搜索关键词
+#商品 + 订单相关
+goods='/goods/selectSkuByGoodsId'
+# goodsId=12759&specId=451438&amount=1
+#加入购物车
+addCart='sCart/add'
+#查询购物车
+getCard='/sCart/get'
+#查询品牌
+goodsbrand='html/goodsbrand/query'
+# http://10.0.0.35:9080/html/goodsbrand/query?originType=1
+#商品详情页
+goodsDetialpage='/goods/goodsDetailPage'
 
 
-
-
-
+#一个下单场景
+#第一步        搜索--》冲锋衣--》返回整个冲锋衣数据返回一个商品list
+#第二步       拿到第一个list取到商品id然后点击商品详情  返回整个商品信息   选取specid
+#第三步      选取specid  加入购物车或者直接购买
+#第四步      结算购物车---》申请售后---》平台自动售后成功
 
 
 

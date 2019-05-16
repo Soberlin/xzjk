@@ -44,9 +44,6 @@ class MyTestCase(unittest.TestCase):
         self.log.info(Config.SY_share)
 
 
-
-
-
     def tearDown(self):
         self.log.info('首页测试结束了。。。。')
 
