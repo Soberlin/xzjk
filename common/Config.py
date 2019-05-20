@@ -17,12 +17,13 @@ userId='7129685'     #userId
 #IP+端口 生产环境
 Host_name1='10.0.0.32:9080'            #线上环境商城32
 Host_name2='10.0.0.35:9080'            #线上环境商城35
+
 #测试环境
 Test_name='192.168.20.2:9080'         #测试环境商城
 #域名访问
 MoreAdd='https://m.outdoorclub.com.cn'   #线上环境商城域名地址
 MoreTestAdd='http://testm.outdoorclub.com.cn'
-
+Pay='http://tpay.outdoorclub.com.cn'
 
 #访问接口的头部
 Headers={"timestamp":getSign13(),"sign":"BEB49195DEC0A46A7968D24A4EB5B91E","appId":appId}
@@ -54,8 +55,6 @@ search='/goods/selectGoodsByWords'  #搜索关键词
 #商品 + 订单相关
 goods='/goods/selectSkuByGoodsId'
 # goodsId=12759&specId=451438&amount=1
-#加入购物车
-addCart='sCart/add'
 #查询购物车
 getCard='/sCart/get'
 #查询品牌
@@ -64,8 +63,16 @@ goodsbrand='html/goodsbrand/query'
 #商品详情页
 goodsDetialpage='/goods/goodsDetailPage'
 goodsSkuByGoodsId='/goods/selectSkuByGoodsId'
+addCart='/sCart/add'
+
+presubmit='/goodsOrder/preSubmit/do'
+goodsordersubmit='/goodsOrder/updatePreSubmit.do'
+goodsorder='goodsOrder.do'
+submitOrder='/commodity/submitOrder'
 
 
+#支付
+payway='/config/get/payway'
 
 #一个下单场景 以及订单列表
 #第一步        搜索--》冲锋衣--》返回整个冲锋衣数据返回一个商品list
