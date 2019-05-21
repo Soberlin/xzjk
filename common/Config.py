@@ -71,6 +71,10 @@ goodsorder='goodsOrder.do'
 submitOrder='/commodity/submitOrder'
 
 
+cancel='/orderList/orderListMain'
+
+
+
 #支付
 payway='/config/get/payway'
 

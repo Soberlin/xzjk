@@ -8,12 +8,12 @@ import pymysql
 
 def get_db_conn():
     conn=pymysql.connect(
-        host='host',
+        host='ip',
         user='user',
         password='password',
         port=3306,
         database='database',
-        charset='utf8')
+        charset='utf8')     #创建连接
     return conn
 
 
