@@ -22,6 +22,7 @@ Host_name2='10.0.0.35:9080'            #线上环境商城35
 Test_name='192.168.20.2:9080'         #测试环境商城
 #域名访问
 MoreAdd='https://m.outdoorclub.com.cn'   #线上环境商城域名地址
+
 MoreTestAdd='http://testm.outdoorclub.com.cn'
 Pay='http://tpay.outdoorclub.com.cn'
 
@@ -65,9 +66,9 @@ goodsDetialpage='/goods/goodsDetailPage'
 goodsSkuByGoodsId='/goods/selectSkuByGoodsId'
 addCart='/sCart/add'
 
-presubmit='/goodsOrder/preSubmit/do'
+presubmit='/goodsOrder/preSubmit.do'
 goodsordersubmit='/goodsOrder/updatePreSubmit.do'
-goodsorder='goodsOrder.do'
+goodsorder='/goodsOrder.do'
 submitOrder='/commodity/submitOrder'
 
 
@@ -77,6 +78,9 @@ cancel='/orderList/orderListMain'
 
 #支付
 payway='/config/get/payway'
+
+
+
 
 #一个下单场景 以及订单列表
 #第一步        搜索--》冲锋衣--》返回整个冲锋衣数据返回一个商品list

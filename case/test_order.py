@@ -8,6 +8,10 @@ import json
 from common.RunRequest import RunMain
 
 
+
+
+
+
 class MyTestCase(unittest.TestCase):
     log = Log();
     # 定义一个集合
@@ -90,34 +94,36 @@ class MyTestCase(unittest.TestCase):
         # self.log.info(x['id'])
 
     # 加入购物车      amount 参数如果是1的话后续要考虑太多
-    def test_4_addgouwuche(self):
-        url = Config.MoreAdd + Config.html + Config.addCart
-        self.log.info(url)
-        data = {
-            "userId": Config.userId, "goodsId": Goods_id, "appId": Config.appId, "specId": Sku_id, "amount": 1,
-            "timestamp": "1550752377651", "sign": "EDFB70A66E1DADF5233551A3A0B92E11"
-        }
-        goodsadd = self.run.run_main(url, "GET", data)
-        self.log.info(goodsadd)
-        self.assertEqual(goodsadd['resultCode'], 2000, msg="断言成功")
-        self.assertEqual(goodsadd['resultMsg'], "成功", msg="断言成功")
+    # def test_4_addgouwuche(self):
+    #     url = Config.MoreAdd + Config.html + Config.addCart
+    #     self.log.info(url)
+    #     data = {
+    #         "userId": Config.userId, "goodsId": Goods_id, "appId": Config.appId, "specId": Sku_id, "amount": 1,
+    #         "timestamp": "1550752377651", "sign": "EDFB70A66E1DADF5233551A3A0B92E11"
+    #     }
+    #     goodsadd = self.run.run_main(url, "GET",data)
+    #     self.log.info(goodsadd)
+    #     self.assertEqual(goodsadd['resultCode'], 2000, msg="断言成功")
+    #     self.assertEqual(goodsadd['resultMsg'], "成功", msg="断言成功")
+    #     self.log.info(Sku_id)
 
     # 清理购物车逻辑
 
-    #提交预订单
+    #提交预订单      buyMode 0
     def test_5_presubmit(self):
         url = Config.MoreAdd + Config.html + Config.presubmit
         self.log.info(url)
         data = {
-            "userId": Config.userId, "goodsOrderDetailsJson": [{"specsId": Sku_id, "number": 1}], "appId": Config.appId,
+            "userId": Config.userId, "goodsOrderDetailsJson": [{"specsId": Sku_id, "number": 1}], "appId": Config.appId,"buyMode":0,
             "timestamp": "1550752377651", "sign": "EDFB70A66E1DADF5233551A3A0B92E11"
         }
-        orderpre = self.run.run_main(url, "POST", data)
-        self.log.info(orderpre)
-        self.log.info(orderpre['data']['id'])
+        presubmit = self.run.run_main(url, "POST", data)
+        self.log.info(presubmit)
+        self.log.info(presubmit['data']['id'])
+
         # 订单号
         global Order_id
-        Order_id=self.log.info(orderpre['data']['id'])
+        Order_id=self.log.info(presubmit['data']['id'])
 
     #提交预订单
     def test_6_submitOrder(self):
