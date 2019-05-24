@@ -74,11 +74,19 @@ submitOrder='/commodity/submitOrder'
 
 cancel='/orderList/orderListMain'
 
-
+goodsorderdetial='/goodsOrder/goodsOrder.do'
 
 #支付
 payway='/config/get/payway'
 
+#获取用户信息
+userinfo='/easemob/getUserInfo'
+
+
+#售后
+aftermarket='/aftermarket/selectOrderDetailsByIds'
+aftermarketById='/aftermarket/selectAfterMarketDetailById'
+applyrefund='/aftermarke/applyAfterSale'
 
 
 
