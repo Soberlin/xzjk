@@ -26,6 +26,7 @@ class MyTestCase(unittest.TestCase):
         self.run=RunMain()
 
     def test_index(self):
+        "测试首页"
         url = Config.MoreAdd + Config.html + Config.index
         # self.log.info(url)
         # querystring = {"timestamp":getSign13(),"sign":"BEB49195DEC0A46A7968D24A4EB5B91E", "appId":Config.appId}

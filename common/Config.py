@@ -86,7 +86,7 @@ userinfo='/easemob/getUserInfo'
 #售后
 aftermarket='/aftermarket/selectOrderDetailsByIds'
 aftermarketById='/aftermarket/selectAfterMarketDetailById'
-applyrefund='/aftermarke/applyAfterSale'
+applyrefund='/aftermarket/applyAfterSale'
 
 
 
@@ -115,3 +115,10 @@ applyrefund='/aftermarke/applyAfterSale'
 # 6、意见反馈
 # 7、签到(累计积分+签到+分享好友)
 # 8、优惠券()
+
+#商城平台  售后
+mallweb='http://10.0.0.32:8080'
+buzi='/buzi'
+mallagreerefund='/orderRefund/agreeRefund'
+submitrefund='/orderRefund/submitRefund'
+

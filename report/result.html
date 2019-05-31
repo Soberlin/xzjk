@@ -98,18 +98,18 @@ function html_escape(s) {
                 <td style="padding: 20px 0 20px 20px;height: 180px;">
                     <h1 style="font-size: 16px;color: #3c8dbc;font-weight: bold;margin: 0 0 15px 0;">V1.0行装商城接口自动化测试用例</h1>
                     
-        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Start Time:</strong> 2019-05-09 11:02:53</p>
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Start Time:</strong> 2019-05-27 15:18:50</p>
     
-        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Duration:</strong> 0:00:00.431122</p>
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Duration:</strong> 0:01:12.819421</p>
     
-        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Status:</strong> Pass 8</p>
+        <p class='attribute' style="margin: 0 0 8px 0;line-height: 20px;"><strong style="width: 100px;display: inline-block;margin-right: 10px;">Status:</strong> Pass 11 Error 13</p>
     
                     <p style="margin: 20px 0 0 0;"></p>
                 </td>
                 <td>
                     <div style="width: 240px;float: right;z-index: 300;position: relative;margin: 20px 20px 15px 0;text-align: right;">
-                        <img src="https://image-charts.com/chart?chs=220x180&chd=t:8,0,0&chdl=Pass:8|Error:0|Fail:0&cht=p3&chco=4CAE4C|EEA236|D43F3A">
-                     <img src="https://image-charts.com/chart?chs=220x180&chd=t:8,0,0&chdl=Pass:8|Error:0|Fail:0&cht=p3&chco=4CAE4C|EEA236|D43F3A">
+                        <img src="https://image-charts.com/chart?chs=220x180&chd=t:11,0,13&chdl=Pass:11|Error:0|Fail:13&cht=p3&chco=4CAE4C|EEA236|D43F3A">
+                     <img src="https://image-charts.com/chart?chs=220x180&chd=t:11,0,13&chdl=Pass:11|Error:0|Fail:13&cht=p3&chco=4CAE4C|EEA236|D43F3A">
                     </div>
                 </td>
             </tr>
@@ -144,15 +144,15 @@ function html_escape(s) {
             
         <tr class='passClass'>
             <td>test_index.MyTestCase</td>
-            <td>2</td>
-            <td>2</td>
+            <td>1</td>
+            <td>1</td>
             <td>0</td>
             <td>0</td>
-            <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+            <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
         </tr>
     
         <tr id='pt1.1' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_index</div></td>
+            <td class=''><div class='testcase'>test_index: 测试首页</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -175,41 +175,17 @@ function html_escape(s) {
             </td>
         </tr>
     
-        <tr id='pt1.2' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_search</div></td>
-            <td colspan='5' align='center'>
-
-            <!--css div popup start-->
-            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-                pass</a>
-
-            <div id='div_pt1.2' class="popup_window">
-                <div style='text-align: right; color:red;cursor:pointer'>
-                <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-                   [x]</a>
-                </div>
-                <pre>
-                
-        pt1.2: 
-    
-                </pre>
-            </div>
-            <!--css div popup end-->
-
-            </td>
-        </tr>
-    
-        <tr class='passClass'>
-            <td>test_sy.MyTestCase</td>
-            <td>2</td>
-            <td>2</td>
+        <tr class='errorClass'>
+            <td>test_order.MyTestCase</td>
+            <td>8</td>
+            <td>3</td>
             <td>0</td>
-            <td>0</td>
-            <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
+            <td>5</td>
+            <td><a href="javascript:showClassDetail('c2',8)">Detail</a></td>
         </tr>
     
         <tr id='pt2.1' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_getNarBar</div></td>
+            <td class=''><div class='testcase'>test_1_search</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -233,7 +209,7 @@ function html_escape(s) {
         </tr>
     
         <tr id='pt2.2' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_sy</div></td>
+            <td class=''><div class='testcase'>test_2_goodsDetial</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -256,17 +232,239 @@ function html_escape(s) {
             </td>
         </tr>
     
-        <tr class='passClass'>
-            <td>test_syfx.MyTestCase</td>
-            <td>4</td>
+        <tr id='pt2.3' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_3_goodssku</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+                pass</a>
+
+            <div id='div_pt2.3' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt2.3: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft2.4' class='errorCase none'>
+            <td class=''><div class='testcase'>test_5_presubmit</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.4')" >
+                error</a>
+
+            <div id='div_ft2.4' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft2.4: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 122, in test_5_presubmit
+    self.log.info(presubmit['data']['id'])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 122, in test_5_presubmit
+    self.log.info(presubmit['data']['id'])
+TypeError: 'NoneType' object is not subscriptable
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft2.5' class='errorCase none'>
+            <td class=''><div class='testcase'>test_6_submitOrder</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.5')" >
+                error</a>
+
+            <div id='div_ft2.5' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.5').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft2.5: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 133, in test_6_submitOrder
+    "advanceOrderId": Order_id,
+NameError: name 'Order_id' is not defined
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 133, in test_6_submitOrder
+    "advanceOrderId": Order_id,
+NameError: name 'Order_id' is not defined
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft2.6' class='errorCase none'>
+            <td class=''><div class='testcase'>test_7_submitOrder</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.6')" >
+                error</a>
+
+            <div id='div_ft2.6' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.6').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft2.6: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 143, in test_7_submitOrder
+    "advanceOrderId": Order_id, "userToken": Config.userId
+NameError: name 'Order_id' is not defined
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 143, in test_7_submitOrder
+    "advanceOrderId": Order_id, "userToken": Config.userId
+NameError: name 'Order_id' is not defined
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft2.7' class='errorCase none'>
+            <td class=''><div class='testcase'>test_8_goodsorder</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.7')" >
+                error</a>
+
+            <div id='div_ft2.7' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.7').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft2.7: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 152, in test_8_goodsorder
+    data = {"userId": Config.userId, "id": Order_id, "shippingMode": 1, "appId": Config.appId,
+NameError: name 'Order_id' is not defined
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 152, in test_8_goodsorder
+    data = {"userId": Config.userId, "id": Order_id, "shippingMode": 1, "appId": Config.appId,
+NameError: name 'Order_id' is not defined
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft2.8' class='errorCase none'>
+            <td class=''><div class='testcase'>test_9_cancelorder</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.8')" >
+                error</a>
+
+            <div id='div_ft2.8' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.8').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft2.8: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 37, in send_get
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 162, in test_9_cancelorder
+    cancelorder = self.run.run_main(url,"GET",data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 50, in run_main
+    r=self.send_get(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 45, in send_get
+    self.log.info("get请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 37, in send_get
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_order.py", line 162, in test_9_cancelorder
+    cancelorder = self.run.run_main(url,"GET",data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 50, in run_main
+    r=self.send_get(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 45, in send_get
+    self.log.info("get请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr class='errorClass'>
+            <td>test_refund.MyTestCase</td>
+            <td>6</td>
             <td>4</td>
             <td>0</td>
-            <td>0</td>
-            <td><a href="javascript:showClassDetail('c3',4)">Detail</a></td>
+            <td>2</td>
+            <td><a href="javascript:showClassDetail('c3',6)">Detail</a></td>
         </tr>
     
         <tr id='pt3.1' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_syfx_1</div></td>
+            <td class=''><div class='testcase'>test_1_Pendingorder</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -290,7 +488,7 @@ function html_escape(s) {
         </tr>
     
         <tr id='pt3.2' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_syfx_2</div></td>
+            <td class=''><div class='testcase'>test_2_goodsorderdetail</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -314,7 +512,7 @@ function html_escape(s) {
         </tr>
     
         <tr id='pt3.3' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_syfx_3</div></td>
+            <td class=''><div class='testcase'>test_3_aftermarket</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -338,7 +536,7 @@ function html_escape(s) {
         </tr>
     
         <tr id='pt3.4' class='none hiddenRow'>
-            <td class=''><div class='testcase'>test_syfx_4</div></td>
+            <td class=''><div class='testcase'>test_4_applyrefund</div></td>
             <td colspan='5' align='center'>
 
             <!--css div popup start-->
@@ -361,12 +559,712 @@ function html_escape(s) {
             </td>
         </tr>
     
+        <tr id='ft3.5' class='errorCase none'>
+            <td class=''><div class='testcase'>test_5_Agreerefund</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.5')" >
+                error</a>
+
+            <div id='div_ft3.5' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.5').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft3.5: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 21, in send_post
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 889, in json
+    self.content.decode(encoding), **kwargs
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_refund.py", line 142, in test_5_Agreerefund
+    res = self.run.run_main(url, "POST", data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 52, in run_main
+    r=self.send_post(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 28, in send_post
+    self.log.info("post请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 21, in send_post
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 889, in json
+    self.content.decode(encoding), **kwargs
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_refund.py", line 142, in test_5_Agreerefund
+    res = self.run.run_main(url, "POST", data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 52, in run_main
+    r=self.send_post(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 28, in send_post
+    self.log.info("post请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft3.6' class='errorCase none'>
+            <td class=''><div class='testcase'>test_6_submitrefund</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.6')" >
+                error</a>
+
+            <div id='div_ft3.6' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.6').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft3.6: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 21, in send_post
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 889, in json
+    self.content.decode(encoding), **kwargs
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_refund.py", line 161, in test_6_submitrefund
+    res = self.run.run_main(url, "POST", data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 52, in run_main
+    r=self.send_post(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 28, in send_post
+    self.log.info("post请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 21, in send_post
+    result=r.json()
+  File "D:\tool\python\lib\site-packages\requests\models.py", line 889, in json
+    self.content.decode(encoding), **kwargs
+  File "D:\tool\python\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\tool\python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\tool\python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_refund.py", line 161, in test_6_submitrefund
+    res = self.run.run_main(url, "POST", data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 52, in run_main
+    r=self.send_post(url,data)
+  File "D:\zidonghua\xzjk\common\RunRequest.py", line 28, in send_post
+    self.log.info("post请求错误：%e"%e)
+TypeError: must be real number, not JSONDecodeError
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr class='errorClass'>
+            <td>test_sy.MyTestCase</td>
+            <td>5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>4</td>
+            <td><a href="javascript:showClassDetail('c4',5)">Detail</a></td>
+        </tr>
+    
+        <tr id='ft4.1' class='errorCase none'>
+            <td class=''><div class='testcase'>test_getNarBar</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+                error</a>
+
+            <div id='div_ft4.1' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft4.1: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 17, in test_getNarBar
+    RunMain(Config.SY_getNarBar,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 17, in test_getNarBar
+    RunMain(Config.SY_getNarBar,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft4.2' class='errorCase none'>
+            <td class=''><div class='testcase'>test_notification</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.2')" >
+                error</a>
+
+            <div id='div_ft4.2' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.2').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft4.2: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 34, in test_notification
+    RunMain(Config.SY_notification,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 34, in test_notification
+    RunMain(Config.SY_notification,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft4.3' class='errorCase none'>
+            <td class=''><div class='testcase'>test_qrcode</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.3')" >
+                error</a>
+
+            <div id='div_ft4.3' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.3').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft4.3: Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 41, in test_qrcode
+    RunMain(Config.SY_getcode,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 41, in test_qrcode
+    RunMain(Config.SY_getcode,'GET',Config.Headers)
+TypeError: RunMain() takes no arguments
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='pt4.4' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_share</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.4')" >
+                pass</a>
+
+            <div id='div_pt4.4' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.4').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt4.4: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft4.5' class='errorCase none'>
+            <td class=''><div class='testcase'>test_sy</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.5')" >
+                error</a>
+
+            <div id='div_ft4.5' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.5').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft4.5: Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/index/loadLayout (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 23, in test_sy
+    reponse = requests.request("Get",url).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/index/loadLayout (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/index/loadLayout (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zidonghua\xzjk\case\test_sy.py", line 23, in test_sy
+    reponse = requests.request("Get",url).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/index/loadLayout (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB527BA8&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr class='errorClass'>
+            <td>test_syfx.MyTestCase</td>
+            <td>4</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td><a href="javascript:showClassDetail('c5',4)">Detail</a></td>
+        </tr>
+    
+        <tr id='ft5.1' class='errorCase none'>
+            <td class=''><div class='testcase'>test_syfx_1</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+                error</a>
+
+            <div id='div_ft5.1' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft5.1: Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=&amp;desc=&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\zidonghua\xzjk\case\test_syfx.py", line 44, in test_syfx
+    reponse = requests.request("POST",url,params=value).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=&amp;desc=&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=&amp;desc=&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\zidonghua\xzjk\case\test_syfx.py", line 44, in test_syfx
+    reponse = requests.request("POST",url,params=value).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=&amp;desc=&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB5AD358&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='ft5.2' class='errorCase none'>
+            <td class=''><div class='testcase'>test_syfx_2</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.2')" >
+                error</a>
+
+            <div id='div_ft5.2' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.2').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        ft5.2: Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=%E8%A1%8C%E8%A3%85%E5%95%86%E5%9F%8E&amp;desc=%E8%A1%8C%E8%A3%85%E6%98%AF%E5%9B%BD%E5%86%85%E9%A6%96%E5%AE%B6%E4%B8%93%E6%B3%A8%E4%BA%8E%E8%BF%90%E5%8A%A8%EF%BC%8C%E6%88%B7%E5%A4%96%E3%80%81%E6%97%85%E8%A1%8C%E8%A3%85%E5%A4%87%E7%9A%84%E5%9E%82%E7%9B%B4%E7%A4%BE%E7%BE%A4%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\zidonghua\xzjk\case\test_syfx.py", line 44, in test_syfx
+    reponse = requests.request("POST",url,params=value).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=%E8%A1%8C%E8%A3%85%E5%95%86%E5%9F%8E&amp;desc=%E8%A1%8C%E8%A3%85%E6%98%AF%E5%9B%BD%E5%86%85%E9%A6%96%E5%AE%B6%E4%B8%93%E6%B3%A8%E4%BA%8E%E8%BF%90%E5%8A%A8%EF%BC%8C%E6%88%B7%E5%A4%96%E3%80%81%E6%97%85%E8%A1%8C%E8%A3%85%E5%A4%87%E7%9A%84%E5%9E%82%E7%9B%B4%E7%A4%BE%E7%BE%A4%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "D:\tool\python\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "D:\tool\python\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\tool\python\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\tool\python\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=%E8%A1%8C%E8%A3%85%E5%95%86%E5%9F%8E&amp;desc=%E8%A1%8C%E8%A3%85%E6%98%AF%E5%9B%BD%E5%86%85%E9%A6%96%E5%AE%B6%E4%B8%93%E6%B3%A8%E4%BA%8E%E8%BF%90%E5%8A%A8%EF%BC%8C%E6%88%B7%E5%A4%96%E3%80%81%E6%97%85%E8%A1%8C%E8%A3%85%E5%A4%87%E7%9A%84%E5%9E%82%E7%9B%B4%E7%A4%BE%E7%BE%A4%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tool\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\zidonghua\xzjk\case\test_syfx.py", line 44, in test_syfx
+    reponse = requests.request("POST",url,params=value).json()
+  File "D:\tool\python\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\tool\python\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\tool\python\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='m.outdoorclub.com.cn', port=443): Max retries exceeded with url: /html/share/lockfansurl?shareType=1&amp;userId=7129685&amp;title=%E8%A1%8C%E8%A3%85%E5%95%86%E5%9F%8E&amp;desc=%E8%A1%8C%E8%A3%85%E6%98%AF%E5%9B%BD%E5%86%85%E9%A6%96%E5%AE%B6%E4%B8%93%E6%B3%A8%E4%BA%8E%E8%BF%90%E5%8A%A8%EF%BC%8C%E6%88%B7%E5%A4%96%E3%80%81%E6%97%85%E8%A1%8C%E8%A3%85%E5%A4%87%E7%9A%84%E5%9E%82%E7%9B%B4%E7%A4%BE%E7%BE%A4%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0&amp;img_url=http%3A%2F%2F10.0.0.32%2Fhtml%2Findex%2Factivity%3Fid%3D3295&amp;activityShare=1 (Caused by NewConnectionError('&lt;urllib3.connection.VerifiedHTTPSConnection object at 0x000001A2DB4B6C18&gt;: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))
+
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='pt5.3' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_3</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.3')" >
+                pass</a>
+
+            <div id='div_pt5.3' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.3').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt5.3: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
+        <tr id='pt5.4' class='none hiddenRow'>
+            <td class=''><div class='testcase'>test_syfx_4</div></td>
+            <td colspan='5' align='center'>
+
+            <!--css div popup start-->
+            <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.4')" >
+                pass</a>
+
+            <div id='div_pt5.4' class="popup_window">
+                <div style='text-align: right; color:red;cursor:pointer'>
+                <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.4').style.display = 'none' " >
+                   [x]</a>
+                </div>
+                <pre>
+                
+        pt5.4: 
+    
+                </pre>
+            </div>
+            <!--css div popup end-->
+
+            </td>
+        </tr>
+    
             <tr id='total_row'>
                 <td>Total</td>
-                <td>8</td>
-                <td>8</td>
+                <td>24</td>
+                <td>11</td>
                 <td>0</td>
-                <td>0</td>
+                <td>13</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
