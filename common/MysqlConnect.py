@@ -82,9 +82,13 @@ import pymysql
 
 from common.MysqlHelper import MysqlHelper
 
-mh = MysqlHelper('192.168.20.11', 'root', 'P@ssw0rd', 'js', 'utf8')
+mh = MysqlHelper('192.168.20.11', 3306,'root', 'P@ssw0rd', 'js', 'utf8')
 sql = "select * from js_userbasic where id=%s"
+
+# 查询出userid为7129685的仅退款的refund_orderId
+sql2='SELECT refund_orderId FROM js_order_refund WHERE refund_status=0 and refund_userId=%s;'
 print(mh.find(sql, '7129685'))
+print(mh.find(sql2, '7129685'))
 # sql2 = "insert into js_userbasic(name,password) values(%s,%s)"
 # mh.cud(sql2, ('小光', '123456'))
 

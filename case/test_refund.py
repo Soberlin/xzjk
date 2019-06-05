@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
     # 售后id
     refund_id = 0;
     #售后子id
-    godId="";
+    orId="";
 
     reason = {"商品污渍", "商品破损", "商品瑕疵", "商家发错货",
               "商家漏发", "商家缺货", "商家尺码不符", "发货不及时",
@@ -65,8 +65,8 @@ class MyTestCase(unittest.TestCase):
         self.log.info("这是第二个测试用例")
         self.log.info(order_id)  # 打印订单号
         data = {
-            "userId": Config.userId, "id": order_id, "appId": Config.appId,
-            "timestamp": "1550752377651", "sign": "EDFB70A66E1DADF5233551A3A0B92E11"
+            "userId":Config.userId,"id":order_id,"appId":Config.appId,
+            "timestamp":"1550752377651","sign":"EDFB70A66E1DADF5233551A3A0B92E11"
         }
         res = self.run.run_main(url, "POST", data)
         self.log.info(res)
@@ -137,6 +137,10 @@ class MyTestCase(unittest.TestCase):
         }
         res = self.run.run_main(url, "POST", data)
         self.log.info(res)
+        global orId;
+        orId = res['data']['orId']
+        self.log.info(orId)
+        self.log.info(res['data']['orId'])
 
     # http: // 10.0
         # .0
@@ -144,25 +148,24 @@ class MyTestCase(unittest.TestCase):
 
      #操作步骤     sid和rid 有没有
     # http://10.0.0.32:8080/buzi/orderRefund/applyRefundOrder?id=S201905271536518423
-    # 查看售后详情
+    # 查看售后详情         orId:R201906031047482401
     def test_5_refunddetial(self):
         url = Config.MoreAdd + Config.html + Config.aftermarketById
         self.log.info("第五个测试用例=======")
         self.log.info(url)
-        self.log.info(refund_id)
+        self.log.info(orId)
         #R  订单号
-        data = {"orId":refund_id, "appId": Config.appId,
-                       "timestamp": "1550752377651", "sign": "EDFB70A66E1DADF5233551A3A0B92E11"}
+        data = {"orId":orId, "appId": Config.appId,
+                       "timestamp": "1550752377651", "sign":"EDFB70A66E1DADF5233551A3A0B92E11"}
         res = self.run.run_main(url, "GET", data);
         self.log.info(res)
         self.log.info("=================")
-        global godId;
-        godId=res['data']['orId']
-        self.log.info(godId)
-        self.log.info(res['data']['orId'])
 
-
-
+    # id:S201906031337425032
+    # statusBefore: 0
+    # statusAfter: 1
+    # refundId: R201906031337522688
+    # message:
     # 两个提交
     # .32: 8080/buzi/orderRefund/submitRefund
     # .32: 8080/buzi/orderRefund/agreeRefund
@@ -172,11 +175,12 @@ class MyTestCase(unittest.TestCase):
         url = Config.mallweb + Config.buzi+Config.mallagreerefund
         self.log.info("第6个测试用例===========")
         self.log.info(url)
-        self.log.info(godId)
+        self.log.info(orId)
         data = {
-            "id": godId, "statusBefore": 0, "statusAfter": "1", "refundId":refund_id,"message":""
+            "id":refund_id,"statusBefore": 0,"statusAfter": "1","refundId":orId,"message":""
         }
-        res = self.run.run_main(url, "GET", data)
+        self.log.info(data)
+        res = self.run.run_main(url,"GET", data)
         self.log.info(res)
     #平台确认提交售后
     def test_7_submitrefund(self):
@@ -184,9 +188,9 @@ class MyTestCase(unittest.TestCase):
         url = Config.mallweb + Config.buzi+Config.submitrefund
         self.log.info("第7个测试用例==============")
         self.log.info(url)
-        self.log.info(godId)
+        self.log.info(orId)
         data = {
-            "id":godId, "statusBefore": 1, "statusAfter": "2", "refundId":refund_id,
+            "id":refund_id, "statusBefore": 1, "statusAfter": "2", "refundId":orId,
             "message": "","paramJson":{"realPayMoney":0,
                                        "realRebate": "",
                                        "realPointsRebate": "",

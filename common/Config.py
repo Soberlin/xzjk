@@ -118,6 +118,7 @@ applyrefund='/aftermarket/applyAfterSale'
 
 #商城平台  售后
 mallweb='http://10.0.0.32:8080'
+testmallweb='http://192.168.20.2:8080'
 buzi='/buzi'
 mallagreerefund='/orderRefund/agreeRefund'
 submitrefund='/orderRefund/submitRefund'
